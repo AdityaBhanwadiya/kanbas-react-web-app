@@ -1,66 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/public/Kanbas/styles.css" />
+  <link rel="stylesheet" href="/public/Kanbas/Courses/Grades/index.css" />
+  <link rel="stylesheet" href="/public/Kanbas/Navigation/index.css" />
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+
 <body>
+  <div class="main-container">
+    <div class="kanbas-navigation">
+      <ul class="wd-kanbas-navigation">
+        <li><a href="http://northeastern.edu">
+            <img src="/public/images/neu black.png" alt="Northeastern Logo">
+          </a></li>
 
-    <table>
-        <tr>
-            <td style="width: 5%; vertical-align: top;">
-                <ul>
-                    <li><a href="/Kanbas/Account/Profile/screen.html">
-                    Account</a></li>
-                    <li>
-                    <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
-                    </li>
-                    <li>
-                    <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-                    </li>
-                    <li>
-                    <a href="/Kanbas/Calendar/index.html">Calendar</a></li>
-                    <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-                    <li><a href="/Kanbas/History/index.html">History</a></li>
-                    <li><a href="/Kanbas/Studio/index.html">Studio</a></li>
-                    <li><a href="/Kanbas/Commons/index.html">Commons</a></li>
-                    <li><a href="/Kanbas/Help/index.html">Help</a></li>
-                </ul>
-            </td>
-
-            <td style="width: 5%; vertical-align: top;">
-                <ul>
-                    <li><a href="">Notifications</a></li>
-                    <li><a href="/Kanbas/Account/Profile/screen.html">Profiles</a></li>
-                    <li><a href="">Files</a></li>
-                    <li><a href="">Settings</a></li>
-                    <li><a href="">ePortfolios</a></li>
-                    <li><a href="">Shared Content</a></li>
-                    <li><a href="">The Hub</a></li>
-                    <li><a href="">Qwickly Course Tools</a></li>
-                    <li><a href="">Global Announcements</a></li>
-                </ul> 
-            </td>
-
+          <li class="wd-active">
+            <a href="/public/Kanbas/Account/Profile/screen.html">
+                <div class="circle-image">
+                    <img src="/public/images/NewProfile.jpg" alt="Account Image">
+                </div>
+                Account
+            </a>
+        </li>
         
-            <td style="width: 33.33%; vertical-align: top;">
-                <h4> Jose Annunziato's Profile</h4><hr>
 
-                <h1 style="display: inline;">Jose Annunziato</h1>
-                <a href="/Kanbas/Account/Profile/Edit/screen.html" style="float: right;">
-                    <button type="button" style="width: 100px; height: 25px; background-color: white;" >
-                        <img src="/pencil.png" width="12" height="12" style="padding-right: 10%;"/>Edit Me
-                    </button>
-                </a>
-                
-                <br><br>
+        <li>
+          <a href="/public/Kanbas/Dashboard/screen.html">
+            <i class="fa fa-tachometer"></i> Dashboard</a>
+        </li>
 
-                <h2> Contact</h2>
-                No registered services, you can add some on the <a href="">settings</a> page.
+        <li><a href="/public/Kanbas/Courses/Home/screen.html">
+            <i class="fa fa-book"></i> Courses
+          </a> </li>
 
-                <h2> Biography</h2>
-                Faculty, Software Engineer, AI, Space, and renewable enthusiast.
+        <li><a href="#">
+            <i class="fa fa-calendar"></i>Calender
+          </a></li>
 
-                <h2> Links</h2>
-                <a href="">YouTube</a>
-            </td>
-        </tr>
-    </table>
+        <li><a href="#">
+            <i class="fa fa-inbox"></i>Inbox
+          </a></li>
+
+        <li><a href="#">
+            <i class="fa fa-history"></i>History
+          </a></li>
+
+        <li><a href="#">
+            <i class="fa fa-desktop"></i>Studio
+          </a></li>
+
+        <li><a href="#">
+            <i class="fa fa-arrow-circle-right"></i>Commons
+          </a></li>
+
+        <li><a href="#">
+            <i class="fa fa-question-circle"></i>Help
+          </a></li>
+      </ul>
+    </div>
+
+    <div class="course-navigation">
+      <ul>
+        <li><a href="">Notifications</a></li>
+        <li><a href="/public/Kanbas/Account/Profile/screen.html">Profiles</a></li>
+        <li><a href="">Files</a></li>
+        <li><a href="">Settings</a></li>
+        <li><a href="">ePortfolios</a></li>
+        <li><a href="">Shared Content</a></li>
+        <li><a href="">The Hub</a></li>
+        <li><a href="">Qwickly Course Tools</a></li>
+        <li><a href="">Global Announcements</a></li>
+      </ul>
+    </div>
+
+    <div class="course-content">
+      <h4> Jose Annunziato's Profile</h4>
+      <hr>
+
+      <h1 style="display: inline;">Jose Annunziato</h1>
+      <a href="/public/Kanbas/Account/Profile/Edit/screen.html" style="float: right;">
+        <button type="button" style="width: 100px; height: 25px; background-color: white;">
+          <img src="/public/images/pencil.png" width="12" height="12" style="padding-right: 10%;" />Edit Me
+        </button>
+      </a>
+
+      <br><br>
+
+      <h2> Contact</h2>
+      No registered services, you can add some on the <a href="">settings</a> page.
+
+      <h2> Biography</h2>
+      Faculty, Software Engineer, AI, Space, and renewable enthusiast.
+
+      <h2> Links</h2>
+      <a href="">YouTube</a>
+    </div>
 </body>
+
 </html>

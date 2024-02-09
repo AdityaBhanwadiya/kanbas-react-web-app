@@ -1,0 +1,80 @@
+.wd-kanbas-navigation {
+  background-color: black;
+  list-style: none;
+  padding: 0px;  
+  margin: 0px;
+  width: 80px;
+  overflow-y: auto; 
+  overflow-x: hidden;
+  /* position: fixed; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.wd-kanbas-navigation li a img {
+  width: 65px; 
+  height: auto;
+}
+
+.wd-kanbas-navigation .circle-image {
+  width: 40px;
+  height: 40px; 
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 5px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+}
+
+.wd-kanbas-navigation .circle-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.wd-kanbas-navigation li {
+  padding: 10px;     
+  margin-bottom: 10px;
+  font-size: 0.8em;  
+  text-align: center;
+}
+
+.wd-kanbas-navigation li.wd-active {
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.wd-kanbas-navigation li.wd-active a {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wd-kanbas-navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.wd-kanbas-navigation a i {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.wd-kanbas-navigation a i.account-white {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 5px;
+}

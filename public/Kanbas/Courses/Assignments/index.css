@@ -1,0 +1,220 @@
+.search-text {
+    margin-top: 5px; 
+    margin-left: 5px;
+    max-width: 250px;
+    width: 50%; 
+    box-sizing: border-box; 
+    border: 1px solid #ccc;
+}
+
+
+.normal-button {
+    width: auto;
+    height: auto;
+    padding: 6px;
+    background-color: #f5f5f5;
+    border: 0;
+    outline: 0;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    text-align: center;
+} 
+
+.module-button {
+    width: auto;
+    height: auto;
+    padding: 6px;
+    background-color: red;
+    border: 0;
+    outline: 0;
+    margin: 5px;
+    border-radius: 4px;
+    color: white;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.ellipse {
+    width: 20px;
+}
+
+.plus {
+    padding: 3px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.wd-modules,
+.wd-modules * {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wd-modules {
+  margin: 5px;
+}
+
+.wd-modules > li {
+    background-color: #f5f5f5;
+    border: 1px solid gray !important;
+    border-left: none !important;
+    margin-bottom: 20px;
+  }
+
+
+.wd-modules > li > div {
+    padding: 10px;
+    border-left: 1px solid gray !important;
+    display: flex;
+    align-items: center;
+  }
+  
+  .caret {
+    font-size: 10px;
+    margin-right: 10px;
+  }
+  .ellipsis-container {
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+    padding: 2px; /* Optional: Add padding for spacing */
+    border-radius: 40px;
+    font-size: smaller;
+    margin-right: 2px;
+}
+
+.float-end {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    margin-right: 10px;
+}
+.fa {
+    margin-right: 10px;
+}
+
+.wd-modules > li > ul > li {
+    border-top: 1px solid gray !important;
+    border-left: 5px solid green;
+  }
+  
+  .wd-modules > li > ul > ul > li {
+      border-top: 1px solid gray !important;
+      border-left: 5px solid green;
+    }
+
+    
+.wd-modules > li > div img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    margin-left: 4px;
+  }
+
+  .wd-modules li img {
+    width: 16px;
+    height: 16px;
+    margin-left: 15px;
+}
+
+.float-start {
+    padding: 10px;
+}
+
+.lgi {
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.goto-edit {
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.goto-edit:hover {
+  margin-left: 10px;
+  text-decoration: underline;
+  color: blue;
+}
+
+
+li.list-group-item {
+  padding: 0;
+}
+
+
+.custom-width {
+  width: 90%; /* Adjust this value as per your requirement */
+  margin: auto; /* Center the content-col */
+}
+
+
+.breadcrumb-content {
+  display: flex;
+}
+
+.breadcrumb-content {
+  display: flex;
+}
+
+.black-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 50px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: none; /* Hide by default */
+}
+
+.black-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.black-header-content span:hover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .breadcrumb {
+      display: block;
+  }
+
+  .black-header {
+      display: none;
+  }
+
+  .course-and-content-row {
+      margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .breadcrumb {
+      display: none;
+  }
+
+  .black-header {
+      display: block;
+  }
+
+  .course-and-content-row {
+      margin-top: 0;
+  }
+}
+
+
+
+
+.white-caret {
+  color: white;
+}

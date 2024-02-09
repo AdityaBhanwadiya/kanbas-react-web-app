@@ -1,136 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/public/Kanbas/Courses/Assignments/Edit/index.css" />
+  <link rel="stylesheet" href="/public/Kanbas/styles.css" />
+  <link rel="stylesheet" href="/public/Kanbas/Navigation/index.css" />
+</head>
+
+
 <body>
 
-    <table>
-        <tr>
-            <td style="width: 5%; vertical-align: top;">
-                <ul>
-                    <li><a href="/Kanbas/Account/Profile/screen.html">
-                    Account</a></li>
-                    <li>
-                    <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
-                    </li>
-                    <li>
-                    <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-                    </li>
-                    <li>
-                    <a href="/Kanbas/Calendar/index.html">Calendar</a></li>
-                    <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-                    <li><a href="/Kanbas/History/index.html">History</a></li>
-                    <li><a href="/Kanbas/Studio/index.html">Studio</a></li>
-                    <li><a href="/Kanbas/Commons/index.html">Commons</a></li>
-                    <li><a href="/Kanbas/Help/index.html">Help</a></li>
-                </ul>
-            </td>
+  <div class="d-flex">
+    <!-- Row 1: Content -->
+    <div class="content-row" style="display: flex;">
+      <!-- Column 1: Kanbas Navigation -->
+      <div class="kanbas-navigation-col">
+        <div class="d-none d-md-block" style="height: 100%;">
+          <ul class="wd-kanbas-navigation">
+            <li><a href="http://northeastern.edu">
+                <img src="/public/images/neu black.png" alt="Northeastern Logo">
+              </a></li>
 
-            <td style="width: 5%; vertical-align: top;">
-                <ul>
-                    <li>
-                    <a href="/Kanbas/Courses/Home/screen.html">
-                        Home</a></li>
-                    <li><a href="/Kanbas/Courses/Modules/screen.html">
-                        Modules</a></li>
-                    <li><a href="/Kanbas/Courses/Piazza/index.html">
-                        Piazza</a></li>
-                    <li><a href="/Kanbas/Courses/Grades/screen.html">
-                        Grades</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">
-                        Assignments</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">
-                        Quizzez</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">
-                        Zoom Meetings</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">
-                        Peoples</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">
-                        Panopto Videos</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">
-                        Discussions</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">
-                        Announcements</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">
-                        Pages</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">
-                        Files</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">
-                        Rubrics</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">
-                        Outcomes</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">
-                        Collaborations</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">
-                        Syllabus</a></li>
-                    <li><a href="/Kanbas/Courses/Settings/Course Details/screen.html">
-                        Settings</a></li>
-                </ul> 
-            </td>
+            <li>
+              <a href="/public/Kanbas/Account/Profile/screen.html">
+                <div class="circle-image">
+                  <img src="/public/images/NewProfile.jpg" alt="Account Image">
+                </div>
+                Account
+              </a>
+            </li>
 
-        
-            <td style="width: 33.33%; vertical-align: top;">
-                <select>
-                    <option>Speed Grader</option>
-                </select><hr>
-        
-                <h1>Assignment Name</h1>
-                <input type="text" value="A1 - ENV + HTML">
-        
-                <form id="textarea"><br>
-                    <textarea cols="21" rows="2" >This is the Assignemnt Description</textarea>
-                </form>
-        
-                <label for="text-field-points">Points</label><br>
-                <input id="text-field-points" value="100"><br><br>
-        
-                <label for="text-field-assgroup">Assignemnt Group</label><br>
-                <select id="text-field-assgroup">
-                    <option>ASSIGNMENTS</option>
-                    <option>QUIZZES</option>
-                    <option>EXAMS</option>
-                    <option>PROJECTS</option>
-                </select><br><br>
-        
-                <label for="text-field-displaygrade">Display Grade As</label><br>
-                <select id="text-field-displaygrade">
-                    <option>Percentage</option>
-                </select><br><br>
-        
-                <label for="text-field-submissiontype">Submission Type</label><br>
-                <select id="text-field-submissiontype">
-                    <option>Online</option>
-                </select><br><br>
-        
-                <label for="text-field-onlineentry">Online Entry Options</label><br>
-                <input type="checkbox" id="chkbox-text-entry"/>
-                    <label for="check-text-entry">Text Entry</label><br/>
-                <input type="checkbox" id="chkbox-website-url"/>
-                    <label for="check-website-url">Website URL</label><br/>
-                <input type="checkbox" id="chkbox-media-recordings"/>
-                    <label for="check-media-recordings">Media Recordings</label><br/>
-                <input type="checkbox" id="chkbox-student-annotation"/>
-                    <label for="check-student-annotation">Student Annotation</label><br/>
-                <input type="checkbox" id="chkbox-file-upload"/>
-                    <label for="check-file-upload">File Uploads</label><br/><br/>
-        
-                <label for="text-assign">Assign</label><br>
-                <label for="text-assign-to">Assign To</label><br/>
-                <input id="text-assign-to" type="text" value="Everyone"><br/><br/>
-        
-                <label for="date-due">Due</label><br>
-                <input type="date" id="date-due" value="2021-01-01"><br><br>
-        
-                <label for="date-available-from">Available From</label><br>
-                <input type="date" id="available-from" value="2021-01-01"><br><br>
-        
-                <label for="date-until">Until</label><br>
-                <input type="date" id="date-until" value="2021-01-01"><br><br>
-        
-                <button type="button" onclick="window.location.href='/Kanbas/Courses/Assignments/screen.html'">
-                    Cancel
-                </button>                
-                <button type="button">Save</button>
-            </td>
-        </tr>
-    </table>
+            <li>
+              <a href="/public/Kanbas/Dashboard/screen.html">
+                <i class="fa fa-tachometer"></i> Dashboard</a>
+            </li>
+
+            <li class="wd-active"><a href="/public/Kanbas/Courses/Home/screen.html">
+                <i class="fa fa-book"></i> Courses
+              </a> </li>
+
+            <li><a href="#">
+                <i class="fa fa-calendar"></i>Calender
+              </a></li>
+
+            <li><a href="#">
+                <i class="fa fa-inbox"></i>Inbox
+              </a></li>
+
+            <li><a href="#">
+                <i class="fa fa-history"></i>History
+              </a></li>
+
+            <li><a href="#">
+                <i class="fa fa-desktop"></i>Studio
+              </a></li>
+
+            <li><a href="#">
+                <i class="fa fa-arrow-circle-right"></i>Commons
+              </a></li>
+
+            <li><a href="#">
+                <i class="fa fa-question-circle"></i>Help
+              </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Column 2: Rest of the Content -->
+      <div class="rest-content-col">
+
+        <!-- Row 1: Breadcrumb -->
+        <div class="breadcrumb" style="display: flex; align-items: center; margin-right: 10px; margin-left: 25px; margin-top: 20px">
+          <div class="breadcrumb-content" style="display: inline;">
+              <img src="/public/images/breadcrumb.png" style="width: 20px; height: 20px;" onclick="toggleSandwichMenu()">
+              <span style="color: red; padding-left: 20px;">CS5610.11744.202310</span>
+              <i class="fa fa-angle-right" style="padding-left: 10px; padding-right: 15px;"></i>
+              <span style="color: black;">Home</span>
+          </div>
+          
+          <div class="student-visibility" style="margin-left: auto;">
+              <button type="button" class="normal-button">
+                  <i class="fa fa-eye"></i>
+                  Student View
+              </button>
+          </div>
+          <hr>
+
+      </div>
+
+      <!-- Responsive Header -->
+      <div class="black-header">
+          <div class="black-header-content">
+              <!-- Sandwich icon and content for the responsive header -->
+              <div style="display: flex; align-items: center;">
+                  <div onclick="toggleSandwichMenu()">
+                      <img src="/public/images/reorder.png" style="width: 20px; height: 20px;">
+                  </div>
+                  <span style=" margin-left: 130px; margin-top: 10px;">CS4550.12631.202410 Modules</span>
+              </div>
+              <!-- Down caret icon -->
+              <i class="fa fa-caret-down white-caret" onclick="toggleChevronMenu()"></i>
+          </div>
+      </div>
+
+        <!-- Row 2: Course Navigation and Content -->
+        <div class="course-and-content-row" style="display: flex;">
+
+          <!-- Column 1: Course Navigation -->
+          <div class="course-navigation-col">
+            <div class="d-none d-md-block" style="height: 100%;">
+              <ul class="wd-navigation">
+                <li>
+                  <a href="/public/Kanbas/Courses/Home/screen.html">
+                    Home</a>
+                </li>
+                <li><a href="/public/Kanbas/Courses/Modules/screen.html">
+                    Modules</a></li>
+                <li><a href="/Kanbas/Courses/Piazza/index.html">
+                    Piazza</a></li>
+                <li><a href="/public/Kanbas/Courses/Grades/screen.html">
+                    Grades</a></li>
+                <li class="wd-active"><a href="/public/Kanbas/Courses/Assignments/screen.html">
+                    Assignments</a></li>
+                <li><a href="/Kanbas/Courses/Assignments/screen.html">
+                    Quizzez</a></li>
+                <li><a href="/Kanbas/Courses/Assignments/screen.html">
+                    Zoom Meetings</a></li>
+                <li><a href="/Kanbas/Courses/Assignments/screen.html">
+                    Peoples</a></li>
+                <li><a href="/Kanbas/Courses/Assignments/screen.html">
+                    Panopto Videos</a></li>
+                <li><a href="/Kanbas/Courses/Assignments/screen.html">
+                    Discussions</a></li>
+                <li><a href="/Kanbas/Courses/Assignments/screen.html">
+                    Announcements</a></li>
+                <li><a href="/Kanbas/Courses/Assignments/screen.html">
+                    Pages</a></li>
+                <li><a href="/Kanbas/Courses/Assignments/screen.html">
+                    Files</a></li>
+                <li><a href="/Kanbas/Courses/Assignments/screen.html">
+                    Rubrics</a></li>
+                <li><a href="/Kanbas/Courses/Assignments/screen.html">
+                    Outcomes</a></li>
+                <li><a href="/Kanbas/Courses/Assignments/screen.html">
+                    Collaborations</a></li>
+                <li><a href="/Kanbas/Courses/Assignments/screen.html">
+                    Syllabus</a></li>
+                <li><a href="/public/Kanbas/Courses/Settings/Course Details/screen.html">
+                    Settings</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 2: Content (Table, Input, etc.) -->
+          <div class="content-col" style="width: 80vw;">
+
+            <div class="flex-fill">
+              <div class="float-end">
+                <i class="fa fa-check-circle text-success" style="margin-right: 10px;"></i>
+                <span style="margin-right: 20px;">Published</span>
+                <button type="button" class="normal-button">
+                  <i class="ellipse fa fa-ellipsis-v"></i>
+                </button>
+              </div>
+
+              <br>
+              <br>
+              <hr style="margin-right: 15px;">
+              <span style="margin-left: 10px;">Assignment Name</span>
+              <div class="name-desc" style="margin-right: 15px;">
+                <input type="text" class="form-control w-100" value="A1 - ENV + HTML"
+                  style="margin-left: 10px; margin-right: 10px;" />
+
+                <textarea class="form-control w-100" rows="4" style="margin-top: 20px; margin-left: 10px;"> This assignment describes how to install the development environemtn for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to GitHub source repository, and then deploying the content to a remote server hosted on Netlify.
+                                </textarea>
+              </div>
+              <div class="container mt-5">
+                <div class="main-div mx-auto">
+                  <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Points</label>
+                    <div class="col-sm-4">
+                      <input type="text" value="100" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Assignment Group</label>
+                    <div class="col-sm-4">
+                      <select class="form-control">
+                        <option value="group1">ASSIGNMENTS</option>
+                        <option value="group2">QUIZZES</option>
+                        <option value="group3">EXAMS</option>
+                        <option value="group4">PROJECTS</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Display Grade as</label>
+                    <div class="col-sm-4">
+                      <select class="form-control">
+                        <option value="percentage">Percentage</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="offset-sm-2 col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">Do not count this assignment towards the final grade</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="container mt-5">
+                    <div class="row mb-3">
+                      <label class="col-sm-2 col-form-label">Assign</label>
+                      <div class="col-sm-10">
+                        <div class="card mx-auto">
+                          <div class="card-body">
+                            <h5 class="card-title">Assign To</h5>
+                            <div class="mb-3">
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label">Due</label>
+                              <input type="date" class="form-control">
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6 mb-3">
+                                <label class="form-label">Available From</label>
+                                <input type="date" class="form-control">
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                <label class="form-label">Until</label>
+                                <input type="date" class="form-control">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-4"></div>
+                          <button class="add-button btn btn-secondary position-absolute bottom-0 start-0 end-0">
+                            <i class="fas fa-plus"></i> Add
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <hr style="margin-right: 15px;">
+
+
+              <div class="d-flex justify-content-between align-items-center">
+
+                <div class="row mb-3">
+                  <div class="offset-sm-2 col-m-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">Notify users that this content has changed</label>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="end-button float-end">
+                  <a href="/public/Kanbas/Courses/Assignments/screen.html"><button type="button"
+                      class="normal-button">Cancel
+                    </button></a>
+                  <button type="button" class="module-button">Save
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+
+  <div id="popup-container"></div>
+    <div id="chevron-container"></div>
+    <script>
+        function toggleSandwichMenu() {
+            var popupContainer = document.getElementById("popup-container");
+
+            // Check if the sandwich menu is already open and the screen size is less than 100%
+            var computedStyle = window.getComputedStyle(popupContainer);
+            if (computedStyle.display === "block" && window.innerWidth < window.screen.width) {
+                // Close the sandwich menu
+                popupContainer.style.display = "none";
+            } else if (window.innerWidth < window.screen.width) {
+                // Open the sandwich menu and load content from sandwich.html
+                fetch("/public/Kanbas/Courses/Home/sandwich.html")
+                    .then(response => response.text())
+                    .then(html => {
+                        popupContainer.innerHTML = html;
+                        popupContainer.style.display = "block";
+                    });
+            }
+        }
+
+
+
+        function toggleChevronMenu() {
+            var chevronContainer = document.getElementById("chevron-container");
+
+            // Check if the sandwich menu is already open and the screen size is less than 100%
+            var computedStyle = window.getComputedStyle(chevronContainer);
+            if (computedStyle.display === "block" && window.innerWidth < window.screen.width) {
+                // Close the sandwich menu
+                chevronContainer.style.display = "none";
+            } else if (window.innerWidth < window.screen.width) {
+                // Open the sandwich menu and load content from sandwich.html
+                fetch("/public/Kanbas/Courses/Home/chevron.html")
+                    .then(response => response.text())
+                    .then(html => {
+                        chevronContainer.innerHTML = html;
+                        chevronContainer.style.display = "block";
+                    });
+            }
+        }
+
+    </script>
+    
 </body>
+
+
 </html>
