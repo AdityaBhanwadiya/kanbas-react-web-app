@@ -287,6 +287,22 @@ h4 {
     }
 }
 
+@media screen and (max-width: 1353px) {
+    .breadcrumb {
+        display: none;
+    }
+
+    .black-header {
+        display: none;
+    }
+
+    .course-and-content-row {
+        margin-top: 0;
+    }
+}
+
+
+
 
 
 
